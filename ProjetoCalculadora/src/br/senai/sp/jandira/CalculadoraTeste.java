@@ -42,9 +42,11 @@ public class CalculadoraTeste {
 		} else if (operacao == 3) {
 			calculo.dividir(valorA, valorB);
 			System.out.println("O resultado da divisão é: " + formatador.format(calculo.verificarResultado()));
-		} else {
+		} else if (operacao == 4){
 			calculo.multiplicar(valorA, valorB);
 			System.out.println("O resultado da multiplicação é: " + calculo.verificarResultado());
+		} else {
+			System.out.println("A operação não foi escolhida.");
 		}
 		
 		
